@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hello, world!</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="./css/base.css">
+    <style>
+        body,html {
+            overflow-x: hidden; /* 横スクロールバーを非表示にする */
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #cccccc;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Casteria</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav mb-2 mb-lg-0"> 
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Food</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Drink</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">お問い合わせ</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<!-- PC -->
+<div class="d-none d-sm-block">
+  <div class="slide-items">
+    <div class="slide-items-img">
+        <div><img src="./img/restaurant.jpg" alt="画像1"></div>
+    </div>
+    <div class="slide-items-img">
+        <div><img src="./img/food.jpg" alt="画像2"></div>
+    </div>
+    <div class="slide-items-img">
+        <div><img src="./img/food2.jpg" alt="画像3"></div>
+    </div>
+    <div class="slide-items-img">
+        <div><img src="./img/food3.jpg" alt="画像4"></div>
+    </div>
+  </div>
+</div>
+<!-- スマホ -->
+<div class="d-md-none">
+  <div class="slide-items2">
+      <div class="slide-items-img2">
+          <div><img src="./img/restaurant.jpg" alt="画像1"></div>
+      </div>
+      <div class="slide-items-img2">
+          <div><img src="./img/food.jpg" alt="画像2"></div>
+      </div>
+      <div class="slide-items-img2">
+          <div><img src="./img/food2.jpg" alt="画像3"></div>
+      </div>
+      <div class="slide-items-img2">
+          <div><img src="./img/food3.jpg" alt="画像4"></div>
+      </div>
+  </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <p class="latest-info">新型コロナウイルスに対する取り組みの最新情報をご案内</p>
+
+        <div class="accordion accordion-flush col-12" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        ■衛生面に関して
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div>
+                        <p class="accordion-body">・マスクを着用しての接客</p>
+                        <p class="accordion-body">・出勤前の検査の徹底</p>
+                        <p class="accordion-body">・レジカウンターやドリンク受け渡し口等への飛沫防止ガードの設置</p>
+                        <p class="accordion-body">・より頻度の高い手洗いの励行</p>
+                        <p class="accordion-body">・テーブルにお客様用の消毒用アルコールの設置</p>
+                        <p class="accordion-body">・従業員間の距離確保のため、休憩や研修時の客席利用</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        ■お客様へのご協力のお願い
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div>
+                      <p class="accordion-body">・店内で、飲食時以外のマスクの着用をお願いいたします</p>
+                      <p class="accordion-body">・入店時の手指の消毒にご協力ください</p>
+                      <p class="accordion-body">・レジに並ぶ際、目安をフロアステッカーに沿った列感覚の確保にご協力ください</p>
+                      <p class="accordion-body">・多数でお越しの際は、お一人がまとめてご注文を願います(混雑時に入場制限をする場合がございます)</p>
+                      <p class="accordion-body">・発熱や体調不良の際はご入店をお控えください</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        ■サービスに関して
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class=>
+                      <p class="accordion-body">・直接お渡しする商品の提供、金銭授受時にグローブの着用</p>
+                      <p class="accordion-body">・ドリンクやフードのサンプリング中止</p>
+                      <p class="accordion-body">・地域活動・イベントの中止</p>
+                      <p class="accordion-body">・混雑時時間帯の客席の譲り合いへのご協力お願いの実施</p>
+                      <p class="accordion-body">・店内設置しているミルク、はちみつ、パウダー類の一時引き下げ</p>
+                      <p class="accordion-body">・混雑状況に応じたドライブするーサービスの一時休止や店内客席利用の制限</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div>
+        <!-- 余白 -->
+        <div class="col-12" style="margin-top: 3cm;"></div>
+
+    <!-- フェードイン -->
+    <!-- PC -->
+    <div class="fade-in col-12 mt-5 mb-5 d-none d-sm-block" style="margin-top: 50px;">
+      <div class="row">
+          <div class="col-md-6 mx-auto col-md-6 mx-auto d-none d-sm-block">
+              <p Style="font-size: 30px; margin-bottom: 20px; font-weight:bold;">Signature Food</p>
+              <img src="./img/food.jpg" alt="フェードイン画像" class="img-fluid" width="1000" height="600">
+          </div>
+          <div class="col-md-6 mx-auto col-md-6 mx-auto d-none d-sm-block">
+              <div style="margin-top: 100px;">
+                  <p class="mx-auto" style="width: 80%;">サーモンは刺身やカルパッチョで食べるのが美味しいですが、リッチな気分になれるサーモンステーキがおすすめです。サーモンの美味しさを引き立てる2種のソースも絶品です！</p>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- スマホ -->
+    <div class="row">
+      <div class="fade-in col-12 mt-3 mb-3 d-md-none">
+          <p Style="font-size: 30px; margin-bottom: 10px; margin-left: 70px; font-weight:bold;" >Signature Food</p>
+      </div>
+      <div class="col-md-6 d-md-none">
+          <img src="./img/food.jpg" alt="フェードイン画像" class="img-fluid mx-auto d-block" width="300" height="100">
+      </div>
+      <div class="col-md-6 d-md-none">
+          <p class="mx-auto" style="width: 70%; text-align: center;">サーモンは刺身やカルパッチョで食べるのが美味しいですが、リッチな気分になれるサーモンステーキがおすすめです。サーモンの美味しさを引き立てる2種のソースも絶品です！</p>
+      </div>
+    </div>
+
+  
+  <!-- PC -->
+  <div class="fade-in col-12 mt-5 mb-5 d-none d-sm-block" style="margin-top: 50px;">
+    <div class="row">
+        <div class="col-md-6 mx-auto d-none d-sm-block">
+            <p Style="font-size: 30px; margin-bottom: 20px; font-weight:bold;">Signature Food</p>
+            <img src="img/barista.jpg" alt="フェードイン画像" class="img-fluid" width="1000" height="600">
+        </div>
+        <div class="col-md-6 mx-auto d-none d-sm-block">
+            <div style="margin-top: 100px;">
+                <p class="mx-auto" style="width: 80%;">当店のコーヒー豆が厳選して世界中から買い付けています。そして、そのコーヒー豆の美味しさを最大限に引き出すために自社のロースタリーで焙煎しています。</p>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- スマホ -->
+    <div class="fade-in col-12">
+      <div class="row">
+          <div class="fade-in col-12 mt-3 mb-3 d-md-none">
+              <p Style="font-size: 30px; margin-bottom: 10px; margin-left: 70px; font-weight:bold;" >Our Coffee</p>
+          </div>
+          <div class="col-md-6 d-md-none">
+              <img src="img/barista.jpg" alt="フェードイン画像" class="img-fluid mx-auto d-block" width="300" height="100">
+          </div>
+          <div class="col-md-6 d-md-none">
+              <p class="mx-auto" style="width: 70%; text-align: center;">当店のコーヒー豆が厳選して世界中から買い付けています。そして、そのコーヒー豆の美味しさを最大限に引き出すために自社のロースタリーで焙煎しています。</p>
+          </div>
+          </div>
+        </div>
+    </div>
+    
+    <!-- PC -->
+    <div class="fade-in col-12 mt-5 mb-5 d-none d-sm-block" style="margin-top: 50px;">
+      <div class="row">
+          <div class="col-md-6 mx-auto d-none d-sm-block">
+              <p Style="font-size: 30px; margin-bottom: 20px; font-weight:bold;">Our Food</p>
+              <img src="./img/food3.jpg" alt="フェードイン画像" class="img-fluid" width="1000" height="600">
+          </div>
+          <div class="col-md-6 mx-auto d-none d-sm-block">
+              <div style="margin-top: 100px;">
+                  <p class="mx-auto" style="width: 80%;">当店は何よりまずは衛生管理に気をつけています。「安全・安心」をお届けするために日々継続的な努力を惜しみません。</p>
+              </div>
+          </div>
+      </div>
+    </div>
+<!-- スマホ -->
+<div class="fade-in col-12 mt-3 mb-3 d-md-none" >
+  <div class="row">
+      <div class="col-md-6 d-md-none">
+          <p Style="font-size: 30px; margin-bottom: 10px; margin-left: 70px; font-weight:bold;">Our Food</p>
+          <img src="./img/food3.jpg" alt="フェードイン画像" class="img-fluid mx-auto d-block" width="300" height="100">
+      </div>
+      <div class="col-md-6 d-md-none">
+          <p class="mx-auto" style="width: 70%; text-align: center;">当店は何よりまずは衛生管理に気をつけています。「安全・安心」をお届けするために日々継続的な努力を惜しみません。</p>
+      </div>
+      </div>
+    </div>
+</div>
+
+<!-- PC -->
+<div class="col-md-10 mx-auto d-none d-sm-block">
+  <div class="row">
+    <div class="bg-dark text-light p-4 d-flex ">
+      <div class="col-md-6">
+        <p class="address-text">Address</strong></p>
+        <p class="address-text2" style="margin-top: 20px;">681 xxxx Drive,xxxxx xxxx #01 - 06000000</p>
+        <p class="address-text2" style="margin-top: 20px;">Opening Hours</p>
+        <p class="address-text" style="margin-top: 25px;">Mondays-Friday:10am-9pm</p>
+        <p class="address-text2" style="margin-top: 20px;">Saturdays,Sundays & Public Holidays: 9am- 9pm</p>
+      </div>
+      <div class="col-md-6 d-none d-sm-block">
+        <img src="./img/barista.jpg" alt="Your Image" class="img-fluid" width="1000" height="600">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- スマホ -->
+<div class="col-md-8 mx-5 d-md-none">
+  <div class="row">
+    <div class="col-md-6">
+    <div class="bg-dark text-light p-4 d-flex">
+      <div class="col-md-6">
+        <p class="address-text">Address</strong></p>
+        <p class="address-text3" style="margin-top: 20px;">681 xxxx Drive,xxxxx xxxx #01 - 06000000</p>
+        <p class="address-text3" style="margin-top: 20px;">Opening Hours</p>
+        <p class="address-text" style="margin-top: 25px;">Mondays-Friday:10am-9pm</p>
+        <p class="address-text3" style="margin-top: 20px;">Saturdays,Sundays & Public Holidays: 9am- 9pm</p>
+      </div>
+      <div class="col-md-6 d-none d-sm-block">
+        <img src="./img/barista.jpg" alt="Your Image" class="img-fluid" width="1000" height="600">
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-8 mx-5 order-md-2 order-1 d-md-none">
+  <img src="./img/barista.jpg" alt="Your Image" class="img-fluid w-100 h-auto">
+</div>
+
+
+
+<div class="container d-none d-sm-block">
+  <div class="row">
+    <div class="col-lg-12 d-flex justify-content-center align-items-center mt-5">
+      <div class="center-text">
+        <p>店舗一覧</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container d-none d-sm-block">
+  <div class="row justify-content-center mt-4">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-6 text-center image-column">
+      <div class="icon-container">
+        <div class="d-flex flex-column align-items-center">
+          <img src="./img/restaurant2.jpg" alt="画像1" class="img-fluid rounded-img" style="width: 250px; height: 250px;">
+          <i class="fa fa-map-marker icon mb-2" style="font-size: 18px;">東京都渋谷区xxxxxx xxxxx</i>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-6 text-center image-column">
+      <div class="icon-container">
+        <div class="d-flex flex-column align-items-center">
+          <img src="./img/restaurant3.jpg" alt="画像1" class="img-fluid rounded-img" style="width: 250px; height: 250px;">
+          <i class="fa fa-map-marker icon mb-2" style="font-size: 18px;">千葉県松戸市xxxxxx xxxxx</i>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-6 text-center image-column">
+      <div class="icon-container">
+        <div class="d-flex flex-column align-items-center">
+          <img src="./img/restaurant4.jpg" alt="画像1" class="img-fluid rounded-img" style="width: 250px; height: 250px;">
+          <i class="fa fa-map-marker icon mb-2" style="font-size: 18px;">神奈川県横浜市xxxxxx xxxxx</i>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-6 text-center image-column">
+      <div class="icon-container">
+        <div class="d-flex flex-column align-items-center">
+          <img src="./img/restaurant5.jpg" alt="画像1" class="img-fluid rounded-img" style="width: 250px; height: 250px;">
+          <i class="fa fa-map-marker icon mb-2" style="font-size: 18px;">埼玉県川越市xxxxxx xxxxx</i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="navbar navbar-expand navbar-light mt-5 py-4" style="background-color: #cccccc;">
+
+  <div class="collapse navbar-collapse justify-content-center" id="navbarNav5">
+      <ul class="navbar-nav">
+          <li class="nav-item active">
+              <a class="nav-link mr-3" href="#" style="font-size: 20px; color: black;">プライバシーポリシー</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link mr-3" href="#" style="font-size: 20px; color: black;">お問い合わせ</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#" style="font-size: 20px; color: black;">運営会社</a>
+          </li>
+      </ul>
+  </div>
+
+</nav>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./js/bass.js"></script>
+
+</body>
+</html>
+
+  

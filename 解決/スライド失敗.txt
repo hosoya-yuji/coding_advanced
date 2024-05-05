@@ -1,0 +1,6 @@
+スライドの実装のためSlickを利用して記入したが反映しなかった
+SlickのCDNが読み込めていないようだった。
+ // となっている所を全て https:// に修正して反映するようになった。
+
+
+https://terakoya.sejuku.net/question/detail/17706
