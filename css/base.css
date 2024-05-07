@@ -35,7 +35,9 @@ body {
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 }
-
+body,html {
+	overflow-x: hidden; /* 横スクロールバーを非表示にする */
+}
 
 .slide-items{
 	margin:0 auto;
