@@ -1,0 +1,174 @@
+
+@charset "UTF-8";
+/* reset */
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif, ;
+	background-color: #FFEFD5;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body,html {
+	overflow-x: hidden; /* 横スクロールバーを非表示にする */
+}
+
+.slide-items{
+	margin:0 auto;
+    }
+
+   .slide-items-img img{
+
+	width: 100%; 
+	height: 700px;
+	
+   }
+   .slide-items-img2 img{
+
+	width: 100%; 
+	height: 500px;
+	
+   }
+   .slick-arrow:before{
+	content:""!important;
+	width: 100%!important;
+    height: 100%!important;
+    position: absolute;
+    top: 0;
+    left: 0;
+	opacity:1!important;
+}
+  .slick-prev:before{
+	content: "" !important;
+    left: 50px;
+	z-index: 10;
+	background: url(../矢印/yjnew-25_.png)!important;
+	background-size: contain!important;
+}
+ 
+  .slick-next:before{
+	content: "" !important;
+    right: 50px;
+	z-index: 100;
+	background: url(../矢印/yjnew-25.png)!important;
+	background-size: contain!important;
+}
+.slick-arrow{
+    z-index:2!important;
+    width:90px!important;
+    height:60px!important;
+}
+.slick-prev{
+    left:-70px!important;
+}
+.slick-next{
+    right:-30px!important;
+}
+
+.slick-dots{
+    bottom: 20px;
+}
+.slick-dots li button:before{
+    font-size:15px;
+	
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: rgb(39, 158, 255);
+}
+
+    /* アコーディオンのカスタムスタイル */
+    .accordion .accordion-button {
+        background-color: #FFC7AF; /* ヘッダーの背景色を変更 */
+    }
+    .accordion .accordion-button:not(.collapsed) {
+        background-color: #FFC7AF !important; /* 開いている際のヘッダーの背景色を変更 */
+    }
+    .accordion-body {
+        background-color: #FFEFD5; /* ボディの背景色を変更 */
+        
+    }
+    .latest-info {
+	font-weight: bold;
+	font-size: 3.5rem; 
+}
+        /* 追加：フェードインのクラス */
+        .fade-in {
+            opacity: 0;
+            transition: opacity 2s ease;
+        }
+        /* 追加：ビューポート内に表示された時にフェードインするクラス */
+        .in-view {
+            opacity: 1;
+        }
+
+.fadein {
+	opacity : 0.1;
+	transform : translate(0, 50px);
+	transition : all 500ms;
+	}
+
+/* 画面内に入った状態 */
+.fadein.scrollin {
+	opacity : 1;
+	transform : translate(0, 0);
+	}
+.center-text {
+		text-align: center;
+		font-size: 3.5rem
+	  }
+
+ .rounded-img {
+    border-radius: 50%;
+	  }
+
+	  .image-column {
+      padding: 10px; /* 適切な余白を設定してください */
+    }
+	.icon-container {
+		display: flex;
+		align-items: center; /* アイコンと文章を中央に配置 */
+		flex-direction: row; /* アイコンと文章を横に並べる */
+	}
+	.icon {
+		margin-right: 10px; /* アイコンと文章の間に適切なスペースを設定 */
+	  }
+	  .address-text {
+		font-size: 25px !important;
+		margin-top: 20px;
+		margin-left: 10px;
+	}
+	.address-text2 {
+		font-size: 15px !important;
+	}
+	.address-text3 {
+		font-size: 15px !important;
+		margin-left: -20px;
+	}
